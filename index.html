@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>1ª Série</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="weather-animation"></div>
+
+<div class="login-container" id="loginPage">
+
+<h1>1ª Série</h1>
+
+<div class="login-box">
+
+<select id="userType">
+<option>Aluno</option>
+<option>Professor</option>
+</select>
+
+<input type="text" placeholder="Usuário">
+
+<input type="password" placeholder="Senha">
+
+<button onclick="login()">Entrar</button>
+
+</div>
+
+</div>
+
+<div class="dashboard" id="dashboard">
+
+<header>
+
+<div>
+<h2>1ª Série</h2>
+</div>
+
+<div class="header-controls">
+
+<select id="themeColor">
+<option value="#2563eb">Azul</option>
+<option value="#16a34a">Verde</option>
+<option value="#dc2626">Vermelho</option>
+<option value="#9333ea">Roxo</option>
+</select>
+
+<div id="weatherIcon"></div>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<nav>
+
+<button onclick="showSection('atividades')">
+Atividades
+</button>
+
+<button onclick="showSection('horarios')">
+Horários
+</button>
+
+<button onclick="showSection('avaliacoes')">
+Avaliações
+</button>
+
+<button onclick="showSection('trabalhos')">
+Trabalhos
+</button>
+
+<button onclick="showSection('avisos')">
+Avisos
+</button>
+
+</nav>
+
+<main>
+
+<section id="atividades" class="content">
+<h3>Atividades</h3>
+<p>Nenhuma atividade cadastrada.</p>
+</section>
+
+<section id="horarios" class="content hidden">
+<h3>Horários</h3>
+<p>Grade horária da turma.</p>
+</section>
+
+<section id="avaliacoes" class="content hidden">
+<h3>Avaliações</h3>
+<p>Próximas avaliações.</p>
+</section>
+
+<section id="trabalhos" class="content hidden">
+<h3>Trabalhos</h3>
+<p>Lista de trabalhos.</p>
+</section>
+
+<section id="avisos" class="content hidden">
+<h3>Avisos</h3>
+<p>Sem avisos.</p>
+</section>
+
+</main>
+
+</div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
